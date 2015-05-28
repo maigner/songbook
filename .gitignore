@@ -4,3 +4,4 @@ books/*.log
 books/*.sxc
 books/*.sbx
 books/*.sxd
+books/*.out
