@@ -1,0 +1,28 @@
+\documentclass{article}
+\usepackage[chorded]{songs}
+\usepackage{hyperref}
+
+
+
+\providecommand{\songtarget}[2]
+{\pdfbookmark[#1]{\thesongnum. \songtitle}{#2}}
+\providecommand{\songlink}[2]{\hyperlink{#1}{#2}}
+
+% \newindex{<id>}{<filename>}
+\newindex{songbookidx}{songbookidx}
+\noversenumbers
+
+\begin{document}
+
+\showindex{Index}{songbookidx}
+
+\songsection{All Songs}
+
+\begin{songs}{songbookidx}
+
+\include{sample}
+
+
+\end{songs}
+
+\end{document}

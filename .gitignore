@@ -1,0 +1,6 @@
+.DS_Store
+books/*.aux
+books/*.log
+books/*.sxc
+books/*.sbx
+books/*.sxd
