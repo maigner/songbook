@@ -1,26 +1,36 @@
-\documentclass{article}
+\documentclass[a4paper]{article}
+\usepackage[a4paper, margin=2cm]{geometry}
 \usepackage[chorded]{songs}
 \usepackage{hyperref}
-
+\usepackage{german}
+\usepackage[utf8]{inputenc}
 
 
 \providecommand{\songtarget}[2]
 {\pdfbookmark[#1]{\thesongnum. \songtitle}{#2}}
 \providecommand{\songlink}[2]{\hyperlink{#1}{#2}}
 
+\renewcommand{\lyricfont}{\large}
+
+
+
 % \newindex{<id>}{<filename>}
 \newindex{songbookidx}{songbookidx}
+
+
+%Layout options
 \noversenumbers
+\songcolumns{1}
 
 \begin{document}
 
 \showindex{Index}{songbookidx}
 
-\songsection{All Songs}
+%\songsection{All Songs}
 
 \begin{songs}{songbookidx}
 
-\include{sample}
+\include{labrassbanda-inter_mailand}
 
 
 \end{songs}
