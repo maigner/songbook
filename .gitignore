@@ -5,3 +5,5 @@ books/*.sxc
 books/*.sbx
 books/*.sxd
 books/*.out
+latex-songs/*.o
+latex-songs/songidx/*.o
