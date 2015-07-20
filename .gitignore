@@ -7,3 +7,13 @@ books/*.sxd
 books/*.out
 latex-songs/*.o
 latex-songs/songidx/*.o
+latex-songs/songidx/songidx
+latex-songs/songs.aux
+latex-songs/songs.glo
+latex-songs/songs.gls
+latex-songs/songs.idx
+latex-songs/songs.ilg
+latex-songs/songs.ind
+latex-songs/songs.log
+latex-songs/songs.out
+latex-songs/songs.sty
