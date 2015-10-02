@@ -1,0 +1,56 @@
+\documentclass[a4paper]{article}
+\usepackage[a4paper, margin=2cm]{geometry}
+\usepackage[chorded]{songs}
+\usepackage{hyperref}
+\usepackage{german}
+\usepackage[utf8]{inputenc}
+
+
+\providecommand{\songtarget}[2]
+{\pdfbookmark[#1]{\thesongnum. \songtitle}{#2}}
+\providecommand{\songlink}[2]{\hyperlink{#1}{#2}}
+
+\renewcommand{\lyricfont}{\Large}
+
+
+% \newindex{<id>}{<filename>}
+\newindex{chiemseecoversidx}{chiemseecoversidx}
+%Layout options
+\noversenumbers
+\songcolumns{1}
+
+\begin{document}
+
+\showindex{Index}{chiemseecoversidx}
+
+%\songsection{All Songs}
+
+\begin{songs}{chiemseecoversidx}
+
+\include{cake-i_will_survive}
+\include{counting_crows-mr_jones}
+\include{red_hot_chili_peppers-cant_stop}
+\include{red_hot_chili_peppers-dany_california}
+\include{red_hot_chili_peppers-under_the_bridge}
+\include{amy_winehouse-rehab}
+\include{ostbahn_kurti-57er_chevy}
+\include{ostbahn_kurti-tequila_sunrise}
+\include{tito_and_tarantula-after_dark}
+\include{bob_marley-redemption_song}
+\include{neil_young-rocking_in_the_free_world}
+\include{lynyrd_skynyrd-simple_man}
+\include{boomtown_rats-dont_like_mondays}
+\include{traditional-whiskey_in_the_jar}
+\include{konstantin_wecker-saudummer_tag}
+\include{the_cure-friday_im_in_love}
+\include{eagles-hotel_california}
+
+%one page songs
+\include{ccr-proud_mary}
+\include{bon_jovi-livin_on_a_prayer}
+\include{bon_jovi-wanted_dead_or_alive}
+\include{pink_floyd-wish_you_were_here}
+
+\end{songs}
+
+\end{document}
