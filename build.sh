@@ -9,8 +9,9 @@ pdflatex songbook.tex
 ../latex-songs/songidx/songidx songbookidx.sxd songbookidx.sbx
 pdflatex songbook.tex
 
-pdflatex chiemseecovers.tex
-../latex-songs/songidx/songidx chiemseecoversidx.sxd chiemseecoversidx.sbx
-pdflatex chiemseecovers.tex
+##Add more Books (sub sets of songs)
+#pdflatex chiemseecovers.tex
+#../latex-songs/songidx/songidx chiemseecoversidx.sxd chiemseecoversidx.sbx
+#pdflatex chiemseecovers.tex
 
 cd $DIR
