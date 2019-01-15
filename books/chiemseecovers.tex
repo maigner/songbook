@@ -13,7 +13,9 @@
 \renewcommand{\lyricfont}{\Large}
 
 
-% \newindex{<id>}{<filename>}
+\newindex{titleidx}{cbtitle}
+\newauthorindex{authidx}{cbauth}
+\newscripindex{scripidx}{cbscrip}
 \newindex{chiemseecoversidx}{chiemseecoversidx}
 %Layout options
 \noversenumbers
@@ -25,7 +27,7 @@
 
 %\songsection{All Songs}
 
-\begin{songs}{chiemseecoversidx}
+\begin{songs}{chiemseecoversidx,authidx,scripidx}
 
 \include{ccr-proud_mary}
 \include{bon_jovi-livin_on_a_prayer}
@@ -51,7 +53,10 @@
 \include{eagles-hotel_california}
 \include{bob_dylan-all_along_the_watchtower}
 \include{pink_floyd-wish_you_were_here}
+\include{zz_top-sharp_dressed_man}
+
 
 \end{songs}
+
 
 \end{document}
