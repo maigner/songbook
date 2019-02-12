@@ -8,6 +8,7 @@ cd books
 pdflatex songbook.tex
 ../latex-songs/songidx/songidx songbookidx.sxd songbookidx.sbx
 pdflatex songbook.tex
+rm -rf *.aux
 
 ##Add more Books (sub sets of songs)
 #pdflatex chiemseecovers.tex
