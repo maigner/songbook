@@ -1,0 +1,42 @@
+\documentclass[a4paper]{article}
+\usepackage[a4paper, margin=2cm]{geometry}
+\usepackage[chorded]{songs}
+\usepackage{hyperref}
+\usepackage{german}
+\usepackage[utf8]{inputenc}
+
+
+\providecommand{\songtarget}[2]
+{\pdfbookmark[#1]{\thesongnum. \songtitle}{#2}}
+\providecommand{\songlink}[2]{\hyperlink{#1}{#2}}
+
+\renewcommand{\lyricfont}{\Large}
+
+
+\newindex{titleidx}{cbtitle}
+\newauthorindex{authidx}{cbauth}
+\newscripindex{scripidx}{cbscrip}
+\newindex{Austropopidx}{Austropopidx}
+%Layout options
+\noversenumbers
+\songcolumns{1}
+
+\begin{document}
+%\sffamily
+
+\showindex{Index}{Austropopidx}
+
+\songsection{All Songs}
+
+\begin{songs}{Austropopidx,authidx,scripidx}
+
+\include{eav-bankueberfall}
+\include{eav-afrika}
+
+
+\end{songs}
+
+
+
+\end{document}
+

@@ -5,9 +5,16 @@ export TEXINPUTS=$DIR/songs:$DIR/latex-songs:$TEXINPUTS
 
 #TODO(martin): only perform multiple compilation steps when necessary
 cd books
-pdflatex songbook.tex
-../latex-songs/songidx/songidx songbookidx.sxd songbookidx.sbx
-pdflatex songbook.tex
+#pdflatex songbook.tex
+#../latex-songs/songidx/songidx songbookidx.sxd songbookidx.sbx
+#pdflatex songbook.tex
+
+
+# pdflatex Austropop.tex
+../latex-songs/songidx/songidx Austropopidx.sxd Austropopidx.sbx
+pdflatex Austropop.tex
+
+
 rm -rf *.aux
 
 ##Add more Books (sub sets of songs)
