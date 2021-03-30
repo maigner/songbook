@@ -10,13 +10,13 @@
 {\pdfbookmark[#1]{\thesongnum. \songtitle}{#2}}
 \providecommand{\songlink}[2]{\hyperlink{#1}{#2}}
 
-\renewcommand{\lyricfont}{\Large}
+\renewcommand{\lyricfont}{\large\sffamily}
+\renewcommand{\printchord}[1]{\small\rmfamily\bf#1}
 
 
-\newindex{titleidx}{cbtitle}
-\newauthorindex{authidx}{cbauth}
-\newscripindex{scripidx}{cbscrip}
-\newindex{Austropopidx}{Austropopidx}
+% \newindex{titleidx}{cbtitle}
+\newindex{mainindex}{Austropopidx}
+\newauthorindex{authidx}{authidx}
 %Layout options
 \noversenumbers
 \songcolumns{1}
@@ -24,14 +24,18 @@
 \begin{document}
 %\sffamily
 
-\showindex{Index}{Austropopidx}
+\showindex[2]{Songs}{mainindex}
+\showindex[2]{Künstler}{authidx}
+
 
 \songsection{All Songs}
 
-\begin{songs}{Austropopidx,authidx,scripidx}
+\begin{songs}{mainindex,authidx}
 
 \include{eav-bankueberfall}
 \include{eav-afrika}
+\include{andre_heller-fuer_immer_jung}
+\include{eav-geld_oder_leben}
 
 
 \end{songs}

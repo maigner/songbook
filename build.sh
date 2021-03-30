@@ -1,7 +1,7 @@
 #!/bin/bash
 
 DIR=`pwd`
-export TEXINPUTS=$DIR/songs:$DIR/latex-songs:$TEXINPUTS
+export TEXINPUTS="$DIR/songs":"$DIR/latex-songs":$TEXINPUTS
 
 #TODO(martin): only perform multiple compilation steps when necessary
 cd books
@@ -10,8 +10,9 @@ cd books
 #pdflatex songbook.tex
 
 
-# pdflatex Austropop.tex
+pdflatex Austropop.tex
 ../latex-songs/songidx/songidx Austropopidx.sxd Austropopidx.sbx
+../latex-songs/songidx/songidx authidx.sxd authidx.sbx
 pdflatex Austropop.tex
 
 
@@ -22,4 +23,4 @@ rm -rf *.aux
 #../latex-songs/songidx/songidx chiemseecoversidx.sxd chiemseecoversidx.sbx
 #pdflatex chiemseecovers.tex
 
-cd $DIR
+cd ..
