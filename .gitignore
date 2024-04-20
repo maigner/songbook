@@ -18,3 +18,5 @@ latex-songs/songs.log
 latex-songs/songs.out
 latex-songs/songs.sty
 songs-3.0/
+*.fls
+*.fdb_latexmk
